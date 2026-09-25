@@ -12,6 +12,19 @@
 ---
 
 > **🏆 5th Place Winner at IEEE IC-SIT 2026:** MotorMind officially secured the **5th Rank** at the International Competition on Smart Innovation Technologies (IC-SIT'2026) for the submission: *"MotorMind: Edge AI-Based Predictive Maintenance for Industrial Motors Using IOT and Real-Time Signal Processing,"* representing the Faculty of AI, Delta University for Science and Technology, Egypt.
+> 
+> **[🔗 Click here to view the official IEEE IC-SIT 2026 page](https://r8.ieee.org/egypt-apmtt/ic-sit2026/)**
+
+## 📸 Project Gallery
+
+
+<img width="1536" height="1024" alt="ChatGPT Image 23 يونيو 2026، 01_54_33 م" src="https://github.com/user-attachments/assets/f7bfa238-0448-4901-9039-7ced14511307" />
+
+<img width="1672" height="941" alt="ChatGPT Image 23 يونيو 2026، 02_18_17 م" src="https://github.com/user-attachments/assets/bd6e08ed-de77-4cca-8ba5-350d6e2d49b3" />
+
+<img width="720" height="1280" alt="WhatsApp Image 2026-09-25 at 11 19 05 PM" src="https://github.com/user-attachments/assets/33eccb47-d94a-4450-9e37-f6bc7812abec" />
+
+
 
 ## 💡 The Problem vs. Our Solution
 

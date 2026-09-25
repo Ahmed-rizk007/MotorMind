@@ -1,6 +1,6 @@
 <div align="center">
   <h1>⚙️ MotorMind 🧠</h1>
-  <h3>Next-Gen Edge AI Predictive Maintenance for Industry 4.0</h3>
+  <h3>Edge AI Predictive Maintenance for Industrial Motors</h3>
   
   ![Hardware](https://img.shields.io/badge/Hardware-ESP32-blue?style=for-the-badge&logo=espressif)
   ![Firmware](https://img.shields.io/badge/Firmware-C++-00599C?style=for-the-badge&logo=c%2B%2B)
@@ -17,36 +17,48 @@
 
 ## 📸 Project Gallery
 
-
-<img width="1536" height="1024" alt="ChatGPT Image 23 يونيو 2026، 01_54_33 م" src="https://github.com/user-attachments/assets/f7bfa238-0448-4901-9039-7ced14511307" />
-
-<img width="1672" height="941" alt="ChatGPT Image 23 يونيو 2026، 02_18_17 م" src="https://github.com/user-attachments/assets/bd6e08ed-de77-4cca-8ba5-350d6e2d49b3" />
-
-<img width="720" height="1280" alt="WhatsApp Image 2026-09-25 at 11 19 05 PM" src="https://github.com/user-attachments/assets/33eccb47-d94a-4450-9e37-f6bc7812abec" />
-
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/bd6e08ed-de77-4cca-8ba5-350d6e2d49b3" width="32%" alt="Hardware Setup">
+  <img src="https://github.com/user-attachments/assets/f7bfa238-0448-4901-9039-7ced14511307" width="32%" alt="IoT Dashboard">
+  <img src="https://github.com/user-attachments/assets/33eccb47-d94a-4450-9e37-f6bc7812abec" width="32%" alt="Telegram Alert">
+</div>
 
 ## 💡 The Problem vs. Our Solution
 
 | ❌ Traditional Maintenance | ✅ The MotorMind Solution (Edge AI) |
 | :--- | :--- |
-| **Unplanned Downtime:** Motors fail suddenly, costing factories thousands per minute. | **Zero Downtime:** Predicts anomalies *before* failure occurs. |
-| **High Latency:** Cloud-dependent systems take too long to react to sudden spikes. | **Ultra-Fast (< 1s):** Local Edge AI cuts power instantly. |
+| **Unplanned Downtime:** Motors fail suddenly, causing massive production losses. | **Reduced Unplanned Downtime:** Predicts anomalies *before* failure occurs. |
+| **High Latency:** Cloud-dependent systems take too long to react to sudden spikes. | **Low-Latency Edge Response:** Local Edge AI makes autonomous decisions. |
 | **Expensive:** High installation and recurring subscription costs. | **Cost-Effective:** Built on highly affordable ESP32 architecture. |
+
+## 📊 Technical Performance & Benchmarks
+
+### 🧠 Model Performance
+| Model | Dataset | Accuracy | F1-Score | Flash Footprint |
+| :--- | :--- | :--- | :--- | :--- |
+| Random Forest (15 Trees) | MotorMind Custom Dataset | 95.00% | 1.00 | 14.08 KB |
+| **TinyML Edge (Logistic Regression)**| **MotorMind Custom Dataset** | **97.79%** | **1.00** | **0.31 KB** |
+
+### ⚡ Edge & Hardware Metrics
+* **MCU:** ESP32 (Dual-Core Processing)
+* **Sensors:** ADXL345 (Vibration), ACS712 (Current), DS18B20 (Temperature)
+* **Edge ML Model:** Logistic Regression (Custom C++ Header `MotorModel.h`)
+* **Inference Latency:** `< 1 ms` (Ultra-low latency inference on ESP32)
+* **Memory Footprint:** `0.31 KB` (Extremely lightweight, leaving ample memory for FreeRTOS tasks & WiFi)
 
 ## 📂 Repository Architecture
 
 | Directory | Description | Status |
 | :--- | :--- | :--- |
-| 📁 **`/Firmware`** | ESP32 C++ code for real-time sensor fusion & relay actuation. | 🚧 Active |
-| 📁 **`/Model_Training`** | Python pipelines (FFT, Feature Extraction) for TinyML. | 🚧 Active |
+| 📁 **`/Firmware`** | ESP32 C++ code for real-time sensor data acquisition & relay actuation. | 🚧 Active |
+| 📁 **`/Model_Training`** | Python pipelines (FFT, Feature Extraction) for TinyML classification. | 🚧 Active |
 | 📁 **`/Data`** | Vibration, Current, and Temp datasets for normal/faulty states. | 📦 Archived |
 
 ## 🏗️ How It Works (The Workflow)
 
-1. 📡 **Sense:** Continuous high-frequency sampling (Vibration, Current, Temperature).
-2. 🧠 **Process (Edge AI):** The ESP32 dual-core runs ML inference locally without cloud latency.
-3. ⚡ **Act:** Triggers industrial contactors in **under 1 second** for critical, life-saving faults.
+1. 📡 **Sense:** Continuous high-frequency sampling using ADXL345, ACS712, and DS18B20 sensors.
+2. 🧠 **Process (Edge AI):** The ESP32 dual-core runs FFT and ML inference locally without cloud latency.
+3. ⚡ **Act:** Triggers a protective shutdown via industrial contactors for critical detected anomalies.
 4. 📱 **Report:** Pushes live telemetry to a Cloud Dashboard & sends instant Telegram alerts.
 
 ## 👨‍💻 Development Team
@@ -56,5 +68,5 @@
 
 ---
 <div align="center">
-  <i>Built to Protect the Heart of Industry 🏭</i>
+  <i>Engineered for Reliability in Industry 4.0 🏭</i>
 </div>
